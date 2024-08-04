@@ -1,0 +1,15 @@
+#================================================================
+# Descrição: O programa inverte uma url e mostra o resultado.
+#================================================================
+ 
+# Lê a url e remove o "enter" do fim da string com o método chomp
+print "Digite a url: "
+str = gets().chomp
+ 
+# Inverte a url
+str.reverse!
+ 
+# Imprime a url invertida
+print "A url resultante: " + str + "n"
+ 
+system("pause")
