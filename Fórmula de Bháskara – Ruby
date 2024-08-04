@@ -1,0 +1,26 @@
+#================================================================
+# Descricao: O programa calcula e mostra o resultado de uma
+#            equação do segundo grau.
+#================================================================
+ 
+# Lê os termos da equação e os converte em número reais
+puts "Digite o valor do termo a: "
+a = gets.to_f()
+puts "Digite o valor do termo b: "
+b = gets.to_f()
+puts "Digite o valor do termo c: "
+c = gets.to_f()
+ 
+# Calcula e verifica se delta possui raíz real
+delta = b*b - 4*a*c
+if(delta < 0)
+    puts "A equacao nao possui raizes reais"
+else
+    # Calcula o valor de x1 e x2
+    x1 = (-b + Math.sqrt(delta)) / (2*a)
+    x2 = (-b - Math.sqrt(delta)) / (2*a)
+ 
+    # Imprime os restultados
+    puts "O valor de x1: " + x1.to_s
+    puts "O valor de x2: " + x2.to_s
+end
